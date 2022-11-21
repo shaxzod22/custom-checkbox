@@ -1,0 +1,126 @@
+@font-face {
+    font-family: 'Do Hyeon';
+    font-style: normal;
+    font-weight: 400;
+    src:         url('../fonts/do-hyeon-v16-latin-regular.woff2') format('woff2'),
+    url('../fonts/do-hyeon-v16-latin-regular.woff') format('woff');
+}
+
+*{
+    box-sizing: border-box;
+}
+
+img{
+    vertical-align: middle;
+}
+
+h1, h2, h3, h4, h5, h6, p{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: #000000;
+}
+
+ul, ol, li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    padding-left: 20px;
+    padding-top: 20px;
+    font-size: 16px;
+    font-family: 'Do Hyeon', sans-serif;
+}
+
+/* checkbox */
+.checkbox__container{
+    max-width: 500px;
+    margin: 0 auto;
+}
+.checkbox__heading{
+    margin-bottom: 40px;
+    font-size: 35px;
+}
+
+.checkbox__item{
+    margin-bottom: 20px;
+}
+
+.checkbox__label{
+    font-size: 30px;
+}
+.checkbox__input{
+    display: none;
+}
+
+.checkbox__content{
+    display: flex;
+    align-items: center;
+}
+
+.checkbox__content::before{
+    content: "";
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    background-position: center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    margin-right: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.checkbox__input:checked + .checkbox__content--1::before{
+    background-image: url(./../img/table-tennis.png);
+    
+}
+
+.checkbox__input:checked + .checkbox__content--2::before{
+    background-image: url(./../img/basketball-ball.png);
+    
+}
+
+.checkbox__input:checked + .checkbox__content--3::before{
+    background-image: url(./../img/volleyball-ball.png);
+    
+}
+
+.checkbox__input:checked + .checkbox__content--4::before{
+    background-image: url(./../img/hockey-puck.png);
+    
+}
+
+.disable-type{
+    opacity: 0.6;
+}
+
+.checkbox__content--5::before{
+    background-image: url(./../img/hockey-puck.png);
+    
+}
